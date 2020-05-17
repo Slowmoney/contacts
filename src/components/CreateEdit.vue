@@ -329,12 +329,6 @@ input {
         font: 1.2em sans-serif;
       }
     }
-    &-birsday {
-    }
-    &-email {
-    }
-    &-website {
-    }
   }
 }
 </style>
