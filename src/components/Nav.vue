@@ -103,9 +103,10 @@ export default {
     width: 80%;
     border-radius: 10px;
     margin-right: 10px;
+    height: 35px;
     &__input {
       background-color: #8b5fda;
-      width: 90%;
+       width: 84%; 
       border: 0;
       box-sizing: border-box;
       /* padding: 0px 0px 0px 5px; */

@@ -2,7 +2,7 @@
   <div class="view" v-if="contactid!=0">
     <div class="view-edit-foto">
       <div class="view-edit-foto__img">
-        <img v-if="contact.foto"  :src="contact.foto" />
+        <img v-if="contact.foto" :src="contact.foto" />
       </div>
     </div>
     <hr class="view-edit-hr" />
@@ -61,7 +61,7 @@ export default {
     }
   },
   beforeCreate() {
-    this.$store.getters.getLength
+    this.$store.getters.getLength;
   },
   data() {
     return {
@@ -74,16 +74,13 @@ export default {
         "Веб сайт",
         "Фото",
         "Номер"
-      ],
-      
+      ]
     };
   },
-  methods: {
-    
-  },
+  methods: {},
   computed: {
-  contact:function(){
-      return this.$store.getters.getContactById(this.contactid)
+    contact: function() {
+      return this.$store.getters.getContactById(this.contactid);
     }
   }
 };
@@ -93,9 +90,9 @@ export default {
   visibility: hidden;
 }
 img {
-     height: 100%;
-    width: 100%;
-    border-radius: 100%;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
 }
 .view {
   &-edit {
@@ -110,13 +107,13 @@ img {
       margin-bottom: 35px;
       max-width: 375px;
       image-rendering: pixelated;
-      &__img{
-            height: 280px;
-    background-size: cover;
-    width: 280px;
-    border: 1px #eee solid;
-    border-radius: 100%;
-    box-shadow: 1px 1px 8px 0px #9e9e9e;
+      &__img {
+        height: 280px;
+        background-size: cover;
+        width: 280px;
+        border: 1px #eee solid;
+        border-radius: 100%;
+        box-shadow: 1px 1px 8px 0px #9e9e9e;
       }
     }
     &-hr {

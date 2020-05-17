@@ -1,10 +1,20 @@
 <template >
   <form class="create" @submit="pushContact">
-    <hr class="create-edit-hr" />
     <div class="create-edit">
       <div :class="'create-edit-foto'">
-        {{lang[6]}} URL:
-        <input class="create-edit-foto__input" type="url" v-model="create.foto" />
+        <div class="create-edit-foto-circle">
+          <label class="create-edit-foto__label" for="image">
+            <span v-if="!create.foto">Choose foto</span>  
+            <input
+              id="image"
+              class="create-edit-foto__input"
+              type="file"
+              accept=".png, .jpg, .jpeg"
+              @change="imageToBase64"
+            />
+            <img v-show="create.foto" :src="create.foto" ref="image" />
+          </label>
+        </div>
       </div>
     </div>
     <hr class="create-edit-hr" />
@@ -38,10 +48,10 @@
           <input
             class="create-edit-number__input"
             placeholder="071-123-4567"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             required
             type="tel"
             v-model="create.number"
+            @input="numberFormat"
           />
         </div>
       </div>
@@ -83,7 +93,6 @@
       <div class="create-edit-tags" :key="index">
         <div :class="'create-edit-tags__label'">
           <span>{{item}}</span>
-
           <button @click="deleteTag" class="create-edit-tags-remove__btn" :data-name="item">&#9932;</button>
         </div>
       </div>
@@ -181,12 +190,44 @@ export default {
             e
           ];
         });
+       
       } else if (this.mode == "create") {
         Object.keys(this.create).map(e => {
           this.create[e] = "";
         });
       }
     },
+    numberFormat() {
+      var re = /(?:([\d]{1,}?))??(?:([\d]{1,3}?))??(?:([\d]{1,3}?))??(?:([\d]{2}))??([\d]{2})$/;
+      this.create.number = this.create.number
+        .replace(/(\d)\D+|^[^\d+]/g, "$1")
+        .slice(0, 12);
+      this.create.number = this.create.number.replace(
+        re,
+        (all, a, b, c, d, e) => {
+          return (
+            (a ? a + " " : "") +
+            (b ? b + " " : "") +
+            (c ? c + "-" : "") +
+            (d ? d + "-" : "") +
+            e
+          );
+        }
+      );
+    },
+    imageToBase64(e) {
+      let reader = new FileReader();
+      let file = e.target.files[0];
+      reader.addEventListener(
+        "loadend",
+        e => {
+          this.create.foto = e.target.result;
+          this.$refs.image.src = e.target.result;
+        },
+        false
+      );
+      reader.readAsDataURL(file);
+    }
   },
   computed: {
     ...mapMutations(["addNew"]),
@@ -203,9 +244,10 @@ export default {
   background-color: #673ab7;
 }
 img {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: inherit;
 }
 input {
   height: 30px;
@@ -246,8 +288,23 @@ input {
     }
     &-foto {
       &__input {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
       }
       &__label {
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        width: 250px;
+        margin: auto;
+        box-shadow: 1px 1px 8px 0px #9e9e9e;
       }
     }
     &-hr {
