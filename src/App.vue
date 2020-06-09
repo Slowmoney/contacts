@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="block" >
-      <Nav v-on:filter="filter" v-on:sort="sort" v-bind:mode="nav.mode" v-bind:toOpen="toOpen" v-on:back="back" v-on:add="add" v-on:edit="edit" />
+      <Nav v-on:filter="filter" v-on:sort="sort" :mode="nav.mode" :toOpen="toOpen" v-on:back="back" v-on:add="add" v-on:edit="edit" />
       <div class="wrap" v-if="contactListNull">
         <div class="block-contacts"  v-if="!toOpen.show">
           <ContactsList v-on:open-contact="open" />

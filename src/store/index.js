@@ -17,13 +17,47 @@ export default new Vuex.Store({
       { "id": 8, "first_name": "Brita", "last_name": "Vedyashkin", "email": "bvedyashkin7@woothemes.com", "birsday": "1987-05-10", "website": "meetup.com", "foto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKuSURBVDjLlZLLS5RRGMbf7zrzebdw8FaSqJAbF0GgRBvptinoPxDKRdDKQjBw2TKClgVJCwmUyMBKydDKS9TCME2tRhs1cZwZ57ud853bfB0HiiAVOvBuDuf5ve/7nEcJwxAOOgPTtk4Fr6ZU1OCAVyBCm2Td9jEdcxG5pBwEeDyZtaRwjAvWSpkAxjkITsGKqJBIuvB903upH9QdE3rd1MLW0gIVCMsBoYq8U8H2CUQNBdJZp33fCe6PbJo+4XZVmRHFhEDKCXaB4Accii0NFlfT8GNt56a6X/er56qog/Cd1aQjRRQictasR8B2EXgIQyblAbX95X9WeDSRPiriz3oZY1pvZ2dH590Z7GB+q7LcjBZHVdhMBaCpEfBsCXDR9p8V+t9lLGlUP7PXLxyJbkUMw4DZ2dm+rq6ujjPdz09xTEZrY8VWYZEh/WAwNxWHwEV1eYDsqsuOCxFDaYRQwGZ8ljeUE31+fr4PY3xFVulM5mQzC4LRypoSy037kEykvuZytDnvAQ5oNSa8scAE0JQcGIeb9LcrJl02Tj+U4gcIoanG8MU35qKzK58SaCux9ZSLoGVxvJvnPfAQrQEQEhTCRhpBYVQB61CNyZY+v6qvrzdisRgMDg6O1+kjbUt+23EpTPz2LA9wMa7QFJBuhxIWQHKHQWmBDrXHGozJuTfQ4sWBEDI9NDSUkc8zf5ueB9gubiqyVJBacBDZXQm2MhSiugZW7QkYfj/NuGi5ttd3a9uxi6bM9FhFmak5fgCmHEXqQFcVEDkBiZVt+edhz8fh7om9AHrWxV5JgWoImXMfE1jbsMHd8QF7AQQyONjxp4UQ9/YLnJ710JgaGucXUi6sr2cY84MeQfmyCOg2p3RD5PjPL69v8H0ByEWXnSR7IoPSzjEt+jDQQeE/zi9kq6pv7shelwAAAABJRU5ErkJggg==", "number": "721-455-7498" },
       { "id": 9, "first_name": "Devonne", "last_name": "Pinnion", "email": "dpinnion8@artisteer.com", "birsday": "1987-05-1", "website": "php.net", "foto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJZSURBVDjLjZNfTFJRHMdBmX/m1Pln+qDTNjcmD77oo62trYd667H10nNPvrbWIy+u0FFAOhrMzWZKXaYE8YAx4+Ll8kfL/NPoIuBdmAVjCQQb1LdzLkg2wzrb5557zu/8Pud3/xwZABmFNLlKpbqi1Wr9SqXyKhkr6FwFxejo6EWj0cjRNXSumkcvAuk4QsBuRyKRAG+zSWOhAr3fcDqlWMjhqMYqG8vkdLDV2IhdloUoitgh/dv6eqTq6iQ25XLser1SjK7ZrAgq1ZUF4ZYWMHNziMViYMxmbHR3I97ZiXhbG4LNzWBMpnKM9Ht/E3xtb8fq8DBm+vvhGhxEZGAA0b4+7Pf0YI+I7K2teNjUhJcNDUiQis4IMl1dOBofx+exMRyOjEAksvjQEKJEFCEiobcXH0lVQkcHUgrFnwKe51EqlWpSLBaRz+claKNzNKemIJfLIRAIIJVK4smSA48ZN6YtPPTWEGYsr1HIZ88X0GSr1YoF+xosngjCiSyiyQL4yDFWeBHzK2/g8/nOCmipJxKGYaBn/NgRj+GPfcf6fg5ewtanPHRL3tqCE6hAs+iD8KWA9UgWrJDF6ocMQgcFPHoRBMdx/xbonvPYFjNYC5eTKUGxgPvzrPSY1V+ZCkjSj9MCyuIrDq7QAYKxHLhYHgGyu+1dBtOzC7A/1f0WuFwupNPpb1Ry+mUmjpJwsu9JJRwM5AtonvGYmrUgsGyAffIm7l2/cEMS6PV6uN1ueDyec2HJOWBMU3BobmF7+QGME5dykkCtVrPkGON/mbx7G+Y7134aJi7jF1A6sIfsK39SAAAAAElFTkSuQmCC", "number": "191-642-5777" },
       { "id": 10, "first_name": "Valli", "last_name": "Storm", "email": "vstorm9@businessinsider.com", "birsday": "1987-11-20", "website": "diigo.com", "foto": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGxSURBVDjLpVM9a8JQFL0vUUGFfowFpw4dxM2vf9G5newv6OIvEDoVOnUQf0G7CEYQHVzUVZQoaKFugoW20EUaTd5L+u6NSQORdvDC5dyEd+499ySPOY4Dh0TEK8rl8n0mk7lOJBIpVVWBMUaJAzCFEMA5B8MwPpfL5VOlUrklonegWq3qEr+c/2Nbq9VWHs9XkEwm0xLUy/Lzn5KbD1exaDR6FlpBURSq4/E4HJ2c4jMwmYpcw6vf31be2bAHQTPVHYEFyAr7VeEACzfAQKPuSmlCy7LINBcteifSx3ROWutzlCAZ3Z9Op9ButyEWi8F8Poder0drXTQ1SNUeqalt22EFQrgvC4UC5HI5mow1EjA/SjdEjEQiYAd+HV8BF5xwNBpBo9EgBZPJBDqdDimYzWbQ7XapmeA8rIDLiRjFYpEm4zTEfD7v19lslhSgJ2EFXBAOh0Oo1+vk/ng8Bk3TyBtd16HVarkrCRFWYFqmrwAzqMDzBhMVWNaeFSzT5P3BQJXI3G+9P14XC8c0t5tQg/V6/dLv9c+l3ATDFrvL5HZyCBxpv5Rvboxv3eOxQ6/zD+IbEqvBQWgxAAAAAElFTkSuQmCC", "number": "791-197-5751" },
- 
+
     ],
     search: "",
     sortMode: "first_name",
     filterName: "",
     contactTags: ["friends", "boss", "collegs"],
-
+    sortFunction: {
+      first_name(a, b) {
+        if (a.first_name < b.first_name) {
+          return -1;
+        }
+        if (a.first_name > b.first_name) {
+          return 1;
+        }
+        return 0;
+      },
+      last_name(a, b) {
+        if (a.last_name < b.last_name)
+          return -1;
+        if (a.last_name > b.last_name)
+          return 1;
+        return 0;
+      },
+      birsday(a, b) {
+        let adate = new Date(a.birsday)
+        let bdate = new Date(b.birsday)
+        if (adate.getMonth() < bdate.getMonth()) {
+          return -1;
+        }
+        if (adate.getDate() < bdate.getDate()) {
+          return -1;
+        }
+        if (adate.getMonth() > bdate.getMonth()) {
+          return 1;
+        }
+        if (adate.getDate() > bdate.getDate()) {
+          return 1;
+        }
+        return 0;
+      }
+    }
   },
   getters: {
 
@@ -34,43 +68,6 @@ export default new Vuex.Store({
       return state.contacts.find(c => c.id === id);
     },
     getSortContacts(state) {
-      let sortFunction = {
-        first_name(a, b) {
-          if (a.first_name < b.first_name) {
-            //console.log(-1);
-            return -1;
-          }
-          if (a.first_name > b.first_name) {
-            //console.log(1);
-            return 1;
-          }
-          return 0;
-        },
-        last_name(a, b) {
-          if (a.last_name < b.last_name)
-            return -1;
-          if (a.last_name > b.last_name)
-            return 1;
-          return 0;
-        },
-        birsday(a, b) {
-          let adate = new Date(a.birsday)
-          let bdate = new Date(b.birsday)
-          if (adate.getMonth() < bdate.getMonth()) {
-            return -1;
-          }
-          if (adate.getDate() < bdate.getDate()) {
-            return -1;
-          }
-          if (adate.getMonth() > bdate.getMonth()) {
-            return 1;
-          }
-          if (adate.getDate() > bdate.getDate()) {
-            return 1;
-          }
-          return 0;
-        }
-      }
       let listSort = (sortName = "first_name") => {
         let mapped = state.contacts;
         let today = new Date();
@@ -88,7 +85,7 @@ export default new Vuex.Store({
             }
           })
         }
-        return mapped.sort(sortFunction[sortName]);
+        return mapped.sort(state.sortFunction[sortName]);
       }
 
       let array = listSort(state.sortMode);
@@ -106,7 +103,7 @@ export default new Vuex.Store({
 
       if (state.contactTags.indexOf(state.filterName) !== -1) {
         array = array.filter((e) => {
-          return e.tags?(e.tags.indexOf(state.filterName)!==-1?true:false):false
+          return e.tags ? (e.tags.indexOf(state.filterName) !== -1 ? true : false) : false
         })
       }
       return array;
@@ -141,8 +138,8 @@ export default new Vuex.Store({
     save: (state) => {
       localStorage.contacts = JSON.stringify(state.contacts)
     },
-    remove:(state,id) => {
-      state.contacts.splice(state.contacts.findIndex(c => c.id === id),1)
+    remove: (state, id) => {
+      state.contacts.splice(state.contacts.findIndex(c => c.id === id), 1)
     },
     load: (state) => {
       try {
@@ -152,7 +149,7 @@ export default new Vuex.Store({
       }
     },
     nextSort: (state) => {
-      let m = ["first_name", "last_name", "birsday"]
+      let m = Object.keys(state.sortFunction) /* ["first_name", "last_name", "birsday"] */
       let i = m.indexOf(state.sortMode) + 1;
       i = i >= m.length ? 0 : i
       state.sortMode = m[i]
